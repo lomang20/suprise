@@ -55,10 +55,10 @@ function type() {
 type();
 
 yesBtn.onclick = () => {
-  jawaban.innerText = 'Aaa makasih Vebry! Sa senang sekali 😍';
+  jawaban.innerText = 'Aaa makasih Vebry! ehhh.... Makasih Sayang 😍';
 
   setTimeout(() => {
-    window.location.href = 'https://wa.me/6282211080146?text=Iya%20sa%20mau%20jadi%20ko%20pu%20pacar%20%F0%9F%A4%8D%F0%9F%92%95';
+    window.location.href = 'https://wa.me/6282211080146?text=Iya%20sa%20mau%20jadi%20Lu%20pu%20pacar%20%F0%9F%A4%8D%F0%9F%92%95';
   }, 1500);
 };
 
