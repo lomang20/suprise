@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffe0e9, #ffc3a0);
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 480px;
+  margin: 80px auto 100px auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  min-height: 220px;
+  user-select: none;
+}
+
+h1#staticLine {
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
+  color: #d6336c;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.typing-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  color: #444;
+  min-height: 90px;
+  white-space: pre-wrap;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.buttons button {
+  background: #ff69b4;
+  border: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px 15px;
+  transition: transform 0.2s, background 0.3s;
+  user-select: none;
+  min-width: 140px;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+  background: #ff1493;
+}
+
+#jawaban {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d6336c;
+  user-select: none;
+}
+
+#noBtn {
+  position: relative;
+}
+
+/* Love rain */
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('assets/heart.png') no-repeat center center;
+  background-size: contain;
+  animation: float 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    margin: 50px auto 80px auto;
+    padding: 20px 15px;
+  }
+
+  h1#staticLine {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .typing-text {
+    font-size: 18px;
+    min-height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    min-width: 120px;
+    margin: 8px 12px;
+  }
+
+  #jawaban {
+    font-size: 18px;
+  }
+}
